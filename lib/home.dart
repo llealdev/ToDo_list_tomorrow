@@ -6,7 +6,25 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('ToDo App')),
+      appBar: AppBar(
+        backgroundColor: Colors.cyan.shade200,
+        title: Row(
+          children: [
+            Icon(
+              Icons.menu,
+              color: Colors.black87,
+              size: 30,
+            ),
+            Container(
+              height: 40,
+              width: 40,
+              child: ClipRRect(
+                child: Image.asset('assets/images/avatar.jpg'),
+              ),
+            )
+          ],
+        ),
+      ),
       body: Container(
         child: Text('This is home scream.'),
       ),
