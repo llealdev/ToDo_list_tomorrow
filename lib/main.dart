@@ -1,23 +1,27 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:todo_list/home.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'views/homepage.dart';
 
-void main() {
+void main() async {
+  //inicializa o BD
+  await Hive.initFlutter();
+
+  //abre a caixa
+  var box = await Hive.openBox('caixa');
+
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-        SystemUiOverlayStyle(statusBarColor: Colors.transparent));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'ToDo App',
-      home: Home(),
+      theme: ThemeData(primaryColor: Colors.indigo),
+      title: 'Tarefas',
+      home: HomePage(),
     );
   }
 }
