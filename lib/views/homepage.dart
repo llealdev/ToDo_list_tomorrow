@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:tarefas/data/database.dart';
+import 'package:tarefas/sobre_mim.dart';
 import 'package:tarefas/util/caixa.dart';
 import 'package:tarefas/util/tarefas.dart';
 
@@ -81,14 +82,17 @@ class _HomePageState extends State<HomePage> {
         leading: IconButton(
           icon: const Icon(Icons.search),
           onPressed: () {
-            return;
+           return;
           },
         ),
         actions: [
           IconButton(
             icon: const Icon(Icons.info_outline_rounded),
             onPressed: () {
-              return;
+               Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) =>  SobreMim()),
+            );
             },
           )
         ],
