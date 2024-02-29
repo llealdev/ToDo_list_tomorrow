@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
             onPressed: () {
                Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) =>  SobreMim()),
+              MaterialPageRoute(builder: (context) =>  const SobreMim()),
             );
             },
           )

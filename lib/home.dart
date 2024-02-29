@@ -145,7 +145,7 @@ AppBar _buildAppBar() {
           color: Colors.black87,
           size: 30,
         ),
-        Container(
+        SizedBox(
           height: 40,
           width: 40,
           child: ClipRRect(
