@@ -8,6 +8,7 @@ import 'package:tarefas/util/tarefas.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
+  // ignore: unused_field
   final _controller = TextEditingController();
 
   @override
@@ -91,7 +92,7 @@ class _HomePageState extends State<HomePage> {
             onPressed: () {
                Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) =>  SobreMim()),
+              MaterialPageRoute(builder: (context) =>  const SobreMim()),
             );
             },
           )

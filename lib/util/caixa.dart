@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tarefas/util/botoes.dart';
 
+// ignore: must_be_immutable
 class Caixa extends StatelessWidget {
+  // ignore: prefer_typing_uninitialized_variables
   final controller;
   VoidCallback onSave;
   VoidCallback onCancel;
@@ -26,7 +27,7 @@ class Caixa extends StatelessWidget {
             fontStyle: FontStyle.normal),
       ),
       backgroundColor: Colors.blue.shade300,
-      content: Container(
+      content: SizedBox(
         height: 120,
         child: Column(
           children: [
@@ -50,12 +51,12 @@ class Caixa extends StatelessWidget {
                 children: [
                   //Botão de cancelar
                   Botoes(
-                    icon: Icon(Icons.arrow_back),
+                    icon: const Icon(Icons.arrow_back),
                     onPressed: onCancel,
                   ),
                   //Botão de adicionar
                   Botoes(
-                    icon: Icon(Icons.add),
+                    icon: const Icon(Icons.add),
                     onPressed: onSave,
                   )
                 ],
