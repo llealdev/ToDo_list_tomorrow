@@ -73,7 +73,10 @@ class SobreMim extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            
+            Text('Allan Thales Ramos Oliveira', style: TextStyle(fontSize: 18),),
+            Text('Igor Almeida Oliveira', style: TextStyle(fontSize: 18),),
+            Text('Lucas Júlio de Souza', style: TextStyle(fontSize: 18),),
+            Text('Matheus Henrique de Jesus Leal', style: TextStyle(fontSize: 18),)
           ],
         ),
       ),
