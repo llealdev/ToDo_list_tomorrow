@@ -35,9 +35,12 @@ class SobreMim extends StatelessWidget {
               "Recursos: ",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            Text('• Lista de tarefas personalizáveis.',  style: TextStyle(fontSize: 18) ),
-            Text('• Marcação rápida de tarefas concluídas.', style: TextStyle(fontSize: 18)),
-            Text('• Navegação intuitiva para facilitar o uso.', style: TextStyle(fontSize: 18) ),
+            Text('• Lista de tarefas personalizáveis.',
+                style: TextStyle(fontSize: 18)),
+            Text('• Marcação rápida de tarefas concluídas.',
+                style: TextStyle(fontSize: 18)),
+            Text('• Navegação intuitiva para facilitar o uso.',
+                style: TextStyle(fontSize: 18)),
             SizedBox(height: 16),
             Text(
               'Objetivo:',
@@ -46,28 +49,31 @@ class SobreMim extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-             Text('Simplificar a organização diária, proporcionando uma maneira eficiente de gerenciar tarefas.', style: TextStyle(fontSize: 18),),
-              SizedBox(height: 16),
-              Text(
-               'Tecnologias:',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
+            Text(
+              'Simplificar a organização diária, proporcionando uma maneira eficiente de gerenciar tarefas.',
+              style: TextStyle(fontSize: 18),
+            ),
+            SizedBox(height: 16),
+            Text(
+              'Tecnologias:',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
               ),
-              Text('Desenvolvido com Flutter para criar interfaces nativas e Hive para armazenamento eficiente de dados.', style: TextStyle(fontSize: 18),),
-               SizedBox(height: 16),
-               Text(
-                'Equipe:',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
+            ),
+            Text(
+              'Desenvolvido com Flutter para criar interfaces nativas e Hive para armazenamento eficiente de dados.',
+              style: TextStyle(fontSize: 18),
+            ),
+            SizedBox(height: 16),
+            Text(
+              'Equipe:',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
               ),
-              Text( 'Allan Thales Ramos Oliveira', style: TextStyle(fontSize: 18),),
-              Text( 'Igor Almeida Oliveira', style: TextStyle(fontSize: 18),),
-              Text( 'Lucas Júlio de Souza', style: TextStyle(fontSize: 18),),
-              Text( 'Matheus Henrique de Jesus Leal', style: TextStyle(fontSize: 18),),
+            ),
+            
           ],
         ),
       ),
