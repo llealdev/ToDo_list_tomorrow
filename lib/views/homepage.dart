@@ -75,8 +75,8 @@ class _HomePageState extends State<HomePage> {
     db.updateData();
   }
 
-  @override
-  Widget build(BuildContext context) {
+
+  @override Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue.shade200,
       appBar: AppBar(
@@ -87,6 +87,7 @@ class _HomePageState extends State<HomePage> {
           },
         ),
         actions: [
+  
           IconButton(
             icon: const Icon(Icons.info_outline_rounded),
             onPressed: () {
